@@ -22,12 +22,4 @@ public class GreetingController {
                             String.format(template, name));
     }
 
-    @RequestMapping("/ingredients")
-    public List<Ingredients> ingredients() {
-        List<Ingredients> ingredients = new ArrayList<>();
-        ingredients.add(new Ingredients("salt"));
-        ingredients.add(new Ingredients("sugar"));
-        return ingredients;
-    }
-
 }
