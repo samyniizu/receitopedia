@@ -13,15 +13,19 @@ public class Ingredients {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private UUID uuid;
     private String name;
+    private String unit;
+    private Long quantity;
 
     Ingredients() {
         super();
         this.uuid = UUID.randomUUID();
     }
 
-    public Ingredients(String name) {
+    public Ingredients(String name, String unit, Long quantity) {
         this();
         this.name = name;
+        this.unit = unit;
+        this.quantity = quantity;
     }
 
     public UUID getUuid() {
@@ -30,6 +34,14 @@ public class Ingredients {
 
     public String getName() {
         return name;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public Long getQuantity() {
+        return quantity;
     }
 
 }

@@ -6,6 +6,6 @@ public class Recipes {
 
     private String name;
     private List<Ingredients> ingredients;
-    private List<String> steps;
+    private List<Steps> steps;
 
 }
