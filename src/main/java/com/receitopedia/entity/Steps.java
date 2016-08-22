@@ -1,9 +1,11 @@
 package com.receitopedia.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.UUID;
 
 @Entity
@@ -14,6 +16,9 @@ public class Steps {
     private UUID uuid;
     private Integer priority;
     private String description;
+    @JsonIgnore
+    @ManyToOne
+    private Recipes recipes;
 
     Steps() {
         super();
@@ -26,6 +31,13 @@ public class Steps {
         this.description = description;
     }
 
+    public Steps(Integer priority, String description, Recipes recipes) {
+        this();
+        this.priority = priority;
+        this.description = description;
+        this.recipes = recipes;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
@@ -36,6 +48,10 @@ public class Steps {
 
     public String getDescription() {
         return description;
+    }
+
+    public Recipes getRecipes() {
+        return recipes;
     }
 
 }
