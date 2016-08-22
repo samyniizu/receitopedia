@@ -1,6 +1,6 @@
-package hello.controller;
+package com.receitopedia.controller;
 
-import hello.entity.Ingredients;
+import com.receitopedia.entity.Ingredients;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

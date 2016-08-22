@@ -1,4 +1,4 @@
-package hello.entity;
+package com.receitopedia.entity;
 
 import java.util.List;
 
