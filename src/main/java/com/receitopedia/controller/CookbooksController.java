@@ -1,7 +1,9 @@
 package com.receitopedia.controller;
 
 import com.receitopedia.entity.Cookbooks;
+import com.receitopedia.entity.Recipes;
 import com.receitopedia.repository.CookbooksRepository;
+import com.receitopedia.repository.RecipesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +19,8 @@ public class CookbooksController {
 
     @Autowired
     private CookbooksRepository repository;
+    @Autowired
+    private RecipesRepository recipesRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public Iterable<Cookbooks> findAll() {
@@ -35,7 +39,12 @@ public class CookbooksController {
 
     @RequestMapping(method = RequestMethod.PUT)
     public Cookbooks saveOrUpdate(@RequestBody Cookbooks cookbooks) {
-        return this.repository.save(cookbooks);
+        Cookbooks c = this.repository.save(cookbooks);
+//        for (Recipes recipe : cookbooks.getRecipes()) {
+//            recipe.addCookbooks(c);
+//            this.recipesRepository.save(recipe);
+//        }
+        return c;
     }
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)

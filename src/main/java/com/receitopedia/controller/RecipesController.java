@@ -1,8 +1,12 @@
 package com.receitopedia.controller;
 
 
+import com.receitopedia.entity.Ingredients;
 import com.receitopedia.entity.Recipes;
+import com.receitopedia.entity.Steps;
+import com.receitopedia.repository.IngredientsRepository;
 import com.receitopedia.repository.RecipesRepository;
+import com.receitopedia.repository.StepsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +22,10 @@ public class RecipesController {
 
     @Autowired
     private RecipesRepository repository;
+    @Autowired
+    private IngredientsRepository ingredientsRepository;
+    @Autowired
+    private StepsRepository stepsRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public Iterable<Recipes> findAll() {
@@ -36,7 +44,16 @@ public class RecipesController {
 
     @RequestMapping(method = RequestMethod.PUT)
     public Recipes saveOrUpdate(@RequestBody Recipes recipes) {
-        return this.repository.save(recipes);
+        Recipes r = this.repository.save(recipes);
+        for (Ingredients ingredient : recipes.getIngredients()) {
+            ingredient.setRecipes(r);
+            this.ingredientsRepository.save(ingredient);
+        }
+        for (Steps step : recipes.getSteps()) {
+            step.setRecipes(r);
+            this.stepsRepository.save(step);
+        }
+        return r;
     }
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)

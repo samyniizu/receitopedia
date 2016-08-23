@@ -3,8 +3,10 @@ package com.receitopedia.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.util.UUID;
 
@@ -18,7 +20,8 @@ public class Ingredients {
     private String unit;
     private Long quantity;
     @JsonIgnore
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "recipesUuid", referencedColumnName = "uuid")
     private Recipes recipes;
 
     Ingredients() {
@@ -61,4 +64,7 @@ public class Ingredients {
         return recipes;
     }
 
+    public void setRecipes(Recipes recipes) {
+        this.recipes = recipes;
+    }
 }

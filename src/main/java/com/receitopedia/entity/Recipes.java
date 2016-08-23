@@ -3,7 +3,9 @@ package com.receitopedia.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
@@ -18,9 +20,9 @@ public class Recipes {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private UUID uuid;
     private String name;
-    @OneToMany(mappedBy = "recipes")
+    @OneToMany(mappedBy = "recipes", targetEntity = Ingredients.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Ingredients> ingredients;
-    @OneToMany(mappedBy = "recipes")
+    @OneToMany(mappedBy = "recipes", targetEntity = Steps.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Steps> steps;
     @JsonIgnore
     @ManyToMany(mappedBy = "recipes")
@@ -79,4 +81,7 @@ public class Recipes {
         return Collections.unmodifiableList(cookbooks);
     }
 
+    public void addCookbooks(Cookbooks cookbook) {
+        this.cookbooks.add(cookbook);
+    }
 }

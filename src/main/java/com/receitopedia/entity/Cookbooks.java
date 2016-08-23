@@ -2,6 +2,7 @@ package com.receitopedia.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -18,7 +19,7 @@ public class Cookbooks {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private UUID uuid;
     private String name;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name="CookbooksRecipes",
             joinColumns=  @JoinColumn( name = "cookbooksUuid"),
             inverseJoinColumns= @JoinColumn(name = "recipesUuid") )
