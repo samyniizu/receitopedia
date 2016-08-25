@@ -1,5 +1,5 @@
 -- Bolo de Fubá
-INSERT INTO recipes(uuid, name) VALUES ('155bf53b-561c-4d06-9380-4877aeeb708d', 'Bolo de fubá');
+INSERT INTO recipes(uuid, name, description) VALUES ('155bf53b-561c-4d06-9380-4877aeeb708d', 'Bolo de fubá', 'Tempo de preparo 30 minutos.');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('d3633f0a-8847-4c22-9386-8b7dde94b35a', 'Ovos', 3, '', '155bf53b-561c-4d06-9380-4877aeeb708d');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('657ab684-91cc-4423-b724-7b1d10c1e4ce', 'Açúcar', 2, 'Xícaras', '155bf53b-561c-4d06-9380-4877aeeb708d');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2e90a45f-255e-4e11-9116-c57ce849b7fd', 'Fubá', 2, 'Xícaras', '155bf53b-561c-4d06-9380-4877aeeb708d');
@@ -12,7 +12,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('e382396e-6
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('951961b8-4d1c-496a-8fd9-aae63f1eb67a', 'Leve para assar em forno médio (180° C), preaquecido, por 40 minutos.', 3, '155bf53b-561c-4d06-9380-4877aeeb708d');
 
 -- Risoto de Palmito
-INSERT INTO recipes(uuid, name) VALUES ('0e5af3c0-ec72-4da1-a844-7cc21338e053', 'Risoto de Palmito');
+INSERT INTO recipes(uuid, name, description) VALUES ('0e5af3c0-ec72-4da1-a844-7cc21338e053', 'Risoto de Palmito', 'Por ser muito fácil de fazer, o Risoto de palmito é delicioso e se encaixa em diversas ocasiões.');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2c26c4e8-a3cc-4965-bcfc-1adc7f004a1f', 'Arroz Arbório', 2, 'Xícaras', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('1fe909fb-d124-4b81-abce-0f7bea38fa18', 'Vinho branco seco', 1, 'Xícara', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6f3a4ae2-a79d-4600-8b51-453d90e93ccf', 'Manteiga', 100, 'gramas', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
@@ -28,3 +28,4 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('97ac9366-7
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('f6364547-98a6-4bfe-a0d4-63cefcd4a90c', 'Quando o vinho for absorvido, adicione uma xícara do caldo, misture até que fique bem incorporado e não muito líquido, repita esse procedimento sempre adicionando uma xícara do caldo e esperando absorver.', 5, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8e2d2706-6082-4db4-8038-0764ef4c8be3', 'Ao final, adicione o palmito e a manteiga. Polvilhe com queijo antes de servir.', 6, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('', 'Sirva imediatamente.', 7, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
+

@@ -20,6 +20,7 @@ public class Recipes {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private UUID uuid;
     private String name;
+    private String description;
     @OneToMany(mappedBy = "recipes", targetEntity = Ingredients.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Ingredients> ingredients;
     @OneToMany(mappedBy = "recipes", targetEntity = Steps.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
@@ -33,20 +34,23 @@ public class Recipes {
         this.uuid = UUID.randomUUID();
     }
 
-    public Recipes(String name) {
+    public Recipes(String name, String description) {
         this();
         this.name = name;
+        this.description = description;
     }
 
-    public Recipes(String name, List<Ingredients> ingredients, List<Steps> steps) {
+    public Recipes(String name, String description, List<Ingredients> ingredients, List<Steps> steps) {
         this();
         this.name = name;
+        this.description = description;
         this.ingredients = ingredients;
         this.steps = steps;
     }
 
-    public Recipes(String name, List<Ingredients> ingredients, List<Steps> steps, List<Cookbooks> cookbooks) {
+    public Recipes(String name, String description, List<Ingredients> ingredients, List<Steps> steps, List<Cookbooks> cookbooks) {
         this.name = name;
+        this.description = description;
         this.ingredients = ingredients;
         this.steps = steps;
         this.cookbooks = cookbooks;
@@ -58,6 +62,10 @@ public class Recipes {
 
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public List<Ingredients> getIngredients() {
