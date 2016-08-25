@@ -29,3 +29,32 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('f6364547-9
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8e2d2706-6082-4db4-8038-0764ef4c8be3', 'Ao final, adicione o palmito e a manteiga. Polvilhe com queijo antes de servir.', 6, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('', 'Sirva imediatamente.', 7, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 
+-- Filé a parmegiana
+INSERT INTO recipes(uuid, name, description) VALUES ('aa769aa8-a7c9-45ff-b906-d54ba5d8df4c', 'Filé a parmegiana', 'Tempo de preparo 40 minutos e rendimento 6 porções.');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('70b3f876-b58f-49e7-aba8-d7cf5def4940', 'alcatra', 500, 'gramas', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('83ab5082-84a9-4b33-a1be-d0877250ad42', 'alho', 2, 'dentes', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2d44ece8-2a7a-4272-868b-c53fe5334006', 'orégano, sal e vinagre ', 0, 'a gosto', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('710eaede-6ea8-4da7-a19f-b1839ec0311f', 'ovos', 2, 'batidos com 1 pitada de sal', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6618ba7f-cc6d-4f73-9227-47639300cdcf', 'farinha de rosca', 0, 'o suficiente para empanar', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('3821081e-4ba0-4be9-ba15-69b427bbbafd', 'molho de tomate', 500, 'ml', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('57c3dd78-8509-441a-9581-222eff13da5f', 'mussarela', 500, 'gramas', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('61f77ded-a73a-4645-9032-e9be03cb315f', 'queijo parmesão', 0, 'a gosto', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('18f0c40c-a2be-4684-8a22-14cad030dc12', 'Tempere os filés com o alho, orégano, sal e vinagre', 1, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('e26df361-00a3-474d-bd54-fb929689624a', 'Passe pela farinha de rosca, nos ovos batidos e novamente pela farinha de rosca', 2, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('ca71fcf0-851a-474c-b3cb-0391baafd8a2', 'Frite em óleo quente', 3, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('f0cbe6c9-c508-4eb7-8fac-e9ea7446d408', 'Escorra sobre papel absorvente', 4, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('468233f1-54ae-4de5-9209-d128f76f83f0', 'Acomode os filés em um refratário regado com um pouco de molho', 5, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('a65742dd-2195-485c-a9b3-83a6671b44df', 'Coloque fatias de mussarela sobre os filés', 6, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('31dbbaf5-d954-417f-8f7e-1c1a42a6285a', 'Regue com o molho', 7, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('d143a065-4420-4e21-82db-ae796b98b81f', 'Polvilhe o queijo parmesão ralado', 8, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('7fe6fde6-0fd5-42d5-911c-4f372dcd6b2a', 'Leve ao forno pré-aquecido para derreter a mussarela', 9, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('1be77e28-fe0a-476e-a0a2-786ce21da2f5', 'Sirva com arroz ou purê e uma salada', 10, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+
+-- Mousse de limão
+INSERT INTO recipes(uuid, name, description) VALUES ('1f886899-f47d-4a7b-a685-6e930b915fd2', 'Mousse de limão', 'Receita de mousse de limão de preparo rápido. Rendimento 8 porções.');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('4e5fbfa3-b59d-4984-b9dd-9900b70040f1', 'Leite condensado', 1, 'lata', '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('d11ba304-a01e-4095-ad89-3d4fc2b1dd8a', 'Creme de leite', 1, 'lata', '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f7e75fd2-f4c8-44dc-9857-9343571d29f1', 'Suco de limão', 300, 'ml', '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('c3785691-9d2d-4d8c-98ff-df2861952849', 'No liquidificador, bata o leite condensado e o creme de leite por 3 minutos', 1, '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('667607bb-f68c-4ef5-b713-f87796e5fcfa', 'Acrescente aos poucos o suco de limão e continue batendo', 2, '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('0228ead7-f535-47ec-8871-538602f0e462', 'Na hora de servir, triture o bis e coloque por cima do mousse para decorar', 3, '1f886899-f47d-4a7b-a685-6e930b915fd2');
