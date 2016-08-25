@@ -12,6 +12,11 @@ public interface RecipesRepository extends PagingAndSortingRepository<Recipes, U
     @Query(
             "select r from Recipes r, Ingredients i where r.uuid = i.recipes.uuid and (lower(r.name) like %:q% or lower(i.name) like %:q%)"
     )
-    public Iterable<Recipes> search(@Param("q") String q);
+    Iterable<Recipes> search(@Param("q") String q);
+
+    @Query(
+            "select r from Recipes r order by r.viewCount desc"
+    )
+    Iterable<Recipes> mostVisited();
 
 }

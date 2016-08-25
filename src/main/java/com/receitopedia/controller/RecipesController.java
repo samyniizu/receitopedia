@@ -71,4 +71,9 @@ public class RecipesController {
         return this.repository.search(queryString);
     }
 
+    @RequestMapping(value = "/mostVisited", method = RequestMethod.GET)
+    public Iterable<Recipes> mostVisited() {
+        return this.repository.mostVisited();
+    }
+
 }
