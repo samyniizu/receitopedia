@@ -58,3 +58,25 @@ INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f7e75
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('c3785691-9d2d-4d8c-98ff-df2861952849', 'No liquidificador, bata o leite condensado e o creme de leite por 3 minutos', 1, '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('667607bb-f68c-4ef5-b713-f87796e5fcfa', 'Acrescente aos poucos o suco de limão e continue batendo', 2, '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('0228ead7-f535-47ec-8871-538602f0e462', 'Na hora de servir, triture o bis e coloque por cima do mousse para decorar', 3, '1f886899-f47d-4a7b-a685-6e930b915fd2');
+
+-- Filé de peixe assado
+INSERT INTO recipes(uuid, name, description) VALUES ('15a68d8b-57a9-461a-8368-6fd985468578', 'Filé de peixe assado', 'Tempo de preparo 40 minutos, rendimento 4 porções.');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('0abe27ae-87e5-4b1f-91d5-e77a52d1a972', 'filé de tilápia', 500, 'gramas', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('22a4b32b-a2c8-44d5-8444-b21780813036', 'batatas', 4, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e701c60e-e203-4bf7-800e-0cf2806868ab', 'tomates', 2, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('4f2c147f-91e5-4683-a625-c7fb0b495c72', 'pimentão', 1, 'unidade', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('cd61ffbc-e3b7-43f3-a15c-c8e3b4d9a2f9', 'cebola', 1, 'unidade', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('dc9f1da4-4ee9-4afd-bf66-415f901e3953', 'alcaparras', 1, 'colher de sopa', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('b37a7b50-cf91-4a16-b3ec-51e0c4a80bc7', 'cheiro verde', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('56295228-052d-41b6-85ff-14d965d968e7', 'coentro', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('12cb1c2b-a654-449b-a038-0d03b4b7700d', 'sal', 1, 'colher sopa', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('3700c7d2-4145-492e-a7f9-a949cb50c9f0', 'alho', 1, 'dente', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('60c789f0-0376-42f1-9938-bc09ea87ab8c', 'azeite', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('d164bc6a-e4fb-4c73-bf8d-9c822ebff3ad', 'Tempere o filé de peixe com sal e alho e reserve', 1, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('3ed090ee-268f-4931-b422-5c455dbf5ec0', 'Misture o tomate, cebola, pimentão e alcaparras e tempere com um pouco de sal e junte o cheiro verde e coentro', 2, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('573f2dd2-4281-4925-9782-1b9fc039c35a', 'Reseve', 3, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('32bc957e-1ea4-423d-b941-55a48c96f2c6', 'Unte um refratário com azeite, e forre com as batatas cruas', 4, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8fd7e8a9-bbaa-4b03-9d2a-7d1e62f7e845', 'Cubra as batatas com o peixe e por cima distribua a mistura do tomate', 5, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('55512825-fbf3-4829-ac25-1e61fa94a9a2', 'Regue com bastante azeite e leve ao forno por mais ou menos 30 a 40 minutos', 6, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('6dc53d5c-fefa-4794-8a95-c25d7da44334', 'Quando secar o líquido que acumula no fundo da forma quando está assando e ficar dourado está pronto', 7, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('2ac4a2a9-9f42-4e4f-be0c-9a6fe54f6b6e', 'Sirva com arroz intergal ou branco, é uma delícia!', 8, '15a68d8b-57a9-461a-8368-6fd985468578');
