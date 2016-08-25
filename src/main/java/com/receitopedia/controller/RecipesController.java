@@ -41,7 +41,9 @@ public class RecipesController {
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.GET)
     public Recipes findOne(@PathVariable UUID uuid) {
-        return this.repository.findOne(uuid);
+        Recipes r = this.repository.findOne(uuid);
+        r.incrementView();
+        return this.repository.save(r);
     }
 
     @RequestMapping(method = RequestMethod.PUT)
