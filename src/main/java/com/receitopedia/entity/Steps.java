@@ -28,12 +28,6 @@ public class Steps {
         this.uuid = UUID.randomUUID();
     }
 
-    public Steps(Integer priority, String description) {
-        this();
-        this.priority = priority;
-        this.description = description;
-    }
-
     public Steps(Integer priority, String description, Recipes recipes) {
         this();
         this.priority = priority;

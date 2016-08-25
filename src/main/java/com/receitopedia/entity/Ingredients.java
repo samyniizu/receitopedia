@@ -29,13 +29,6 @@ public class Ingredients {
         this.uuid = UUID.randomUUID();
     }
 
-    public Ingredients(String name, String unit, Long quantity) {
-        this();
-        this.name = name;
-        this.unit = unit;
-        this.quantity = quantity;
-    }
-
     public Ingredients(String name, String unit, Long quantity, Recipes recipes) {
         this();
         this.name = name;
