@@ -58,3 +58,50 @@ INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f7e75
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('c3785691-9d2d-4d8c-98ff-df2861952849', 'No liquidificador, bata o leite condensado e o creme de leite por 3 minutos', 1, '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('667607bb-f68c-4ef5-b713-f87796e5fcfa', 'Acrescente aos poucos o suco de limão e continue batendo', 2, '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('0228ead7-f535-47ec-8871-538602f0e462', 'Na hora de servir, triture o bis e coloque por cima do mousse para decorar', 3, '1f886899-f47d-4a7b-a685-6e930b915fd2');
+
+-- Filé de peixe assado
+INSERT INTO recipes(uuid, name, description) VALUES ('15a68d8b-57a9-461a-8368-6fd985468578', 'Filé de peixe assado', 'Tempo de preparo 40 minutos, rendimento 4 porções.');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('0abe27ae-87e5-4b1f-91d5-e77a52d1a972', 'filé de tilápia', 500, 'gramas', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('22a4b32b-a2c8-44d5-8444-b21780813036', 'batatas', 4, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e701c60e-e203-4bf7-800e-0cf2806868ab', 'tomates', 2, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('4f2c147f-91e5-4683-a625-c7fb0b495c72', 'pimentão', 1, 'unidade', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('cd61ffbc-e3b7-43f3-a15c-c8e3b4d9a2f9', 'cebola', 1, 'unidade', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('dc9f1da4-4ee9-4afd-bf66-415f901e3953', 'alcaparras', 1, 'colher de sopa', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('b37a7b50-cf91-4a16-b3ec-51e0c4a80bc7', 'cheiro verde', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('56295228-052d-41b6-85ff-14d965d968e7', 'coentro', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('12cb1c2b-a654-449b-a038-0d03b4b7700d', 'sal', 1, 'colher sopa', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('3700c7d2-4145-492e-a7f9-a949cb50c9f0', 'alho', 1, 'dente', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('60c789f0-0376-42f1-9938-bc09ea87ab8c', 'azeite', 0, 'a gosto', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('d164bc6a-e4fb-4c73-bf8d-9c822ebff3ad', 'Tempere o filé de peixe com sal e alho e reserve', 1, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('3ed090ee-268f-4931-b422-5c455dbf5ec0', 'Misture o tomate, cebola, pimentão e alcaparras e tempere com um pouco de sal e junte o cheiro verde e coentro', 2, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('573f2dd2-4281-4925-9782-1b9fc039c35a', 'Reseve', 3, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('32bc957e-1ea4-423d-b941-55a48c96f2c6', 'Unte um refratário com azeite, e forre com as batatas cruas', 4, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8fd7e8a9-bbaa-4b03-9d2a-7d1e62f7e845', 'Cubra as batatas com o peixe e por cima distribua a mistura do tomate', 5, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('55512825-fbf3-4829-ac25-1e61fa94a9a2', 'Regue com bastante azeite e leve ao forno por mais ou menos 30 a 40 minutos', 6, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('6dc53d5c-fefa-4794-8a95-c25d7da44334', 'Quando secar o líquido que acumula no fundo da forma quando está assando e ficar dourado está pronto', 7, '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('2ac4a2a9-9f42-4e4f-be0c-9a6fe54f6b6e', 'Sirva com arroz intergal ou branco, é uma delícia!', 8, '15a68d8b-57a9-461a-8368-6fd985468578');
+
+-- Pão caseiro
+INSERT INTO recipes(uuid, name, description) VALUES ('69b65649-68c5-483c-a0f0-ee3cdd8d8ab1', 'Pão caseiro', 'Tempo de preparo 40 minutos e rendimento de 5 porções.');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('94c4521d-0845-4e7c-bde4-d6c50ada4cb8', 'Água', 2, 'copos', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('c17f8392-c2d5-4841-ab83-756e5dacbd10', 'Açúcar', 2, 'colheres de sopa', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('ae40aba4-16c9-48bb-8c6b-e430018dbcc9', 'Sal', 1, 'colher', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('8746bcfa-6ce2-4c0b-a8f6-bb5e0ff732b5', 'Ovo', 1, 'unidade', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('c201c0e3-730d-491c-bebf-c0603d588f26', 'Óleo', 1, 'copo', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('77c3e7ee-e1b6-40a7-ba49-7757224b84da', 'Farinha de trigo', 1, 'quilo', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('ac79c12a-c465-4871-8524-8af9826c8f39', 'Fermento de padaria', 50, 'gramas', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('745ad860-c4f7-481a-bc66-9ceff0291bda', 'Misture o fermento e a água morna, reserve', 1, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8ad8e808-285d-4763-8514-22a369420647', 'No liquidificador, bata o açúcar, o óleo, o sal, o ovo e a água com o fermento por alguns minutos', 2, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('5fe44dc6-a48b-4603-8cfa-f7fcfad05e77', 'Despeje a massa e acrescente a farinha de trigo aos poucos, misturando com as mãos', 3, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('6a883060-139b-43f2-9fd1-ab33772eef81', 'Acrescente a farinha de trigo até que a massa desgrude das mãos e deixe crescer por 1 hora', 4, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('a5b52006-91d0-44dc-a1de-b018577ab8fd', 'Divida a massa em partes e modele os pães', 5, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('c76900ba-54ef-439e-b1b4-fab638d0b8e3', 'Deixe crescer, novamente, por 40 minutos', 6, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('afe2a87b-8200-49bc-ae74-a057f0cb9d6e', 'Leve para assar por 30 minutos', 7, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
+
+-- Livros de receitas
+INSERT INTO cookbooks(uuid, name) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'Receitas com carnes');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', '15a68d8b-57a9-461a-8368-6fd985468578');
+
+INSERT INTO cookbooks(uuid, name) VALUES ('48f12f82-17e6-4661-a3f6-427cf8f88301', 'Sobremesas');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('48f12f82-17e6-4661-a3f6-427cf8f88301', '1f886899-f47d-4a7b-a685-6e930b915fd2');
