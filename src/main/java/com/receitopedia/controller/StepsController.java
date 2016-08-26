@@ -40,7 +40,8 @@ public class StepsController {
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)
     public void delete(@PathVariable UUID uuid) {
-        this.repository.delete(uuid);
+        Steps s = this.repository.findOne(uuid);
+        this.repository.delete(s);
     }
 
 }

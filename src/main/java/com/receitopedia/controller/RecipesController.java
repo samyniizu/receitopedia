@@ -62,7 +62,8 @@ public class RecipesController {
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)
     public void delete(@PathVariable UUID uuid) {
-        this.repository.delete(uuid);
+        Recipes r = this.repository.findOne(uuid);
+        this.repository.delete(r);
     }
 
     @RequestMapping(value = "/search", method = RequestMethod.GET)

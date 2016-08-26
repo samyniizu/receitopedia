@@ -40,7 +40,8 @@ public class IngredientsController {
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)
     public void delete(@PathVariable UUID uuid) {
-        this.repository.delete(uuid);
+        Ingredients i = this.findOne(uuid);
+        this.repository.delete(i);
     }
 
 }

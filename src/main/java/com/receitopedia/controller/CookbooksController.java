@@ -19,8 +19,6 @@ public class CookbooksController {
 
     @Autowired
     private CookbooksRepository repository;
-    @Autowired
-    private RecipesRepository recipesRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public Iterable<Cookbooks> findAll() {
@@ -40,16 +38,13 @@ public class CookbooksController {
     @RequestMapping(method = RequestMethod.PUT)
     public Cookbooks saveOrUpdate(@RequestBody Cookbooks cookbooks) {
         Cookbooks c = this.repository.save(cookbooks);
-//        for (Recipes recipe : cookbooks.getRecipes()) {
-//            recipe.addCookbooks(c);
-//            this.recipesRepository.save(recipe);
-//        }
         return c;
     }
 
     @RequestMapping(value = "/{uuid}", method = RequestMethod.DELETE)
     public void delete(@PathVariable UUID uuid) {
-        this.repository.delete(uuid);
+        Cookbooks c = this.repository.findOne(uuid);
+        this.repository.delete(c);
     }
 
 }

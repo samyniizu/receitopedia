@@ -1,9 +1,9 @@
 package com.receitopedia.repository;
 
+import com.receitopedia.entity.Users;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import java.util.UUID;
-
-@RepositoryRestResource(collectionResourceRel = "users", path = "users")
-public class UsersRepository extends PagingAndSortingRepository<Users, String> {
+@RepositoryRestResource(collectionResourceRel = "user", path = "user")
+public interface UsersRepository extends PagingAndSortingRepository<Users, String> {
 }
