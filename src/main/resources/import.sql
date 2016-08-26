@@ -1,5 +1,5 @@
 -- Bolo de Fubá
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('155bf53b-561c-4d06-9380-4877aeeb708d', 'Bolo de fubá', 'Tempo de preparo 30 minutos.', 564);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('155bf53b-561c-4d06-9380-4877aeeb708d', 'Bolo de fubá', 'Tempo de preparo 30 minutos.', 564, 'http://img.itdg.com.br/tdg/images/recipes/000/009/254/2358/2358_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('d3633f0a-8847-4c22-9386-8b7dde94b35a', 'Ovos', 3, '', '155bf53b-561c-4d06-9380-4877aeeb708d');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('657ab684-91cc-4423-b724-7b1d10c1e4ce', 'Açúcar', 2, 'Xícaras', '155bf53b-561c-4d06-9380-4877aeeb708d');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2e90a45f-255e-4e11-9116-c57ce849b7fd', 'Fubá', 2, 'Xícaras', '155bf53b-561c-4d06-9380-4877aeeb708d');
@@ -12,7 +12,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('e382396e-6
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('951961b8-4d1c-496a-8fd9-aae63f1eb67a', 'Leve para assar em forno médio (180° C), preaquecido, por 40 minutos.', 3, '155bf53b-561c-4d06-9380-4877aeeb708d');
 
 -- Risoto de Palmito
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('0e5af3c0-ec72-4da1-a844-7cc21338e053', 'Risoto de Palmito', 'Por ser muito fácil de fazer, o Risoto de palmito é delicioso e se encaixa em diversas ocasiões.', 7255);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('0e5af3c0-ec72-4da1-a844-7cc21338e053', 'Risoto de Palmito', 'Por ser muito fácil de fazer, o Risoto de palmito é delicioso e se encaixa em diversas ocasiões.', 7255, 'http://img.itdg.com.br/tdg/images/recipes/000/073/226/169273/169273_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2c26c4e8-a3cc-4965-bcfc-1adc7f004a1f', 'Arroz Arbório', 2, 'Xícaras', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('1fe909fb-d124-4b81-abce-0f7bea38fa18', 'Vinho branco seco', 1, 'Xícara', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6f3a4ae2-a79d-4600-8b51-453d90e93ccf', 'Manteiga', 100, 'gramas', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
@@ -30,7 +30,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8e2d2706-6
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('', 'Sirva imediatamente.', 7, '0e5af3c0-ec72-4da1-a844-7cc21338e053');
 
 -- Filé a parmegiana
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('aa769aa8-a7c9-45ff-b906-d54ba5d8df4c', 'Filé a parmegiana', 'Tempo de preparo 40 minutos e rendimento 6 porções.', 826);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('aa769aa8-a7c9-45ff-b906-d54ba5d8df4c', 'Filé a parmegiana', 'Tempo de preparo 40 minutos e rendimento 6 porções.', 826, 'http://img.itdg.com.br/tdg/images/recipes/000/073/010/214425/214425_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('70b3f876-b58f-49e7-aba8-d7cf5def4940', 'alcatra', 500, 'gramas', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('83ab5082-84a9-4b33-a1be-d0877250ad42', 'alho', 2, 'dentes', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2d44ece8-2a7a-4272-868b-c53fe5334006', 'orégano, sal e vinagre ', 0, 'a gosto', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
@@ -51,7 +51,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('7fe6fde6-0
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('1be77e28-fe0a-476e-a0a2-786ce21da2f5', 'Sirva com arroz ou purê e uma salada', 10, 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
 
 -- Mousse de limão
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('1f886899-f47d-4a7b-a685-6e930b915fd2', 'Mousse de limão', 'Receita de mousse de limão de preparo rápido. Rendimento 8 porções.', 1);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('1f886899-f47d-4a7b-a685-6e930b915fd2', 'Mousse de limão', 'Receita de mousse de limão de preparo rápido. Rendimento 8 porções.', 1, 'http://img.itdg.com.br/tdg/images/recipes/000/155/693/102259/102259_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('4e5fbfa3-b59d-4984-b9dd-9900b70040f1', 'Leite condensado', 1, 'lata', '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('d11ba304-a01e-4095-ad89-3d4fc2b1dd8a', 'Creme de leite', 1, 'lata', '1f886899-f47d-4a7b-a685-6e930b915fd2');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f7e75fd2-f4c8-44dc-9857-9343571d29f1', 'Suco de limão', 300, 'ml', '1f886899-f47d-4a7b-a685-6e930b915fd2');
@@ -60,7 +60,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('667607bb-f
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('0228ead7-f535-47ec-8871-538602f0e462', 'Na hora de servir, triture o bis e coloque por cima do mousse para decorar', 3, '1f886899-f47d-4a7b-a685-6e930b915fd2');
 
 -- Filé de peixe assado
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('15a68d8b-57a9-461a-8368-6fd985468578', 'Filé de peixe assado', 'Tempo de preparo 40 minutos, rendimento 4 porções.', 1425);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('15a68d8b-57a9-461a-8368-6fd985468578', 'Filé de peixe assado', 'Tempo de preparo 40 minutos, rendimento 4 porções.', 1425, 'http://img.itdg.com.br/tdg/images/recipes/000/109/052/69643/69643_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('0abe27ae-87e5-4b1f-91d5-e77a52d1a972', 'filé de tilápia', 500, 'gramas', '15a68d8b-57a9-461a-8368-6fd985468578');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('22a4b32b-a2c8-44d5-8444-b21780813036', 'batatas', 4, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e701c60e-e203-4bf7-800e-0cf2806868ab', 'tomates', 2, 'unidades', '15a68d8b-57a9-461a-8368-6fd985468578');
@@ -82,7 +82,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('6dc53d5c-f
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('2ac4a2a9-9f42-4e4f-be0c-9a6fe54f6b6e', 'Sirva com arroz intergal ou branco, é uma delícia!', 8, '15a68d8b-57a9-461a-8368-6fd985468578');
 
 -- Pão caseiro
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('69b65649-68c5-483c-a0f0-ee3cdd8d8ab1', 'Pão caseiro', 'Tempo de preparo 40 minutos e rendimento de 5 porções.', 284);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('69b65649-68c5-483c-a0f0-ee3cdd8d8ab1', 'Pão caseiro', 'Tempo de preparo 40 minutos e rendimento de 5 porções.', 284, 'http://img.itdg.com.br/tdg/images/recipes/000/009/589/130375/130375_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('94c4521d-0845-4e7c-bde4-d6c50ada4cb8', 'Água', 2, 'copos', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('c17f8392-c2d5-4841-ab83-756e5dacbd10', 'Açúcar', 2, 'colheres de sopa', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('ae40aba4-16c9-48bb-8c6b-e430018dbcc9', 'Sal', 1, 'colher', '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
@@ -99,7 +99,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('c76900ba-5
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('afe2a87b-8200-49bc-ae74-a057f0cb9d6e', 'Leve para assar por 30 minutos', 7, '69b65649-68c5-483c-a0f0-ee3cdd8d8ab1');
 
 -- Couscous Marroquino
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('1bab1bd4-86f4-4676-996b-e0ba378050a6', 'Couscous Marroquino', 'Tempo de preparo 40 minutos, rendimento 6 porções.', 1189);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('1bab1bd4-86f4-4676-996b-e0ba378050a6', 'Couscous Marroquino', 'Tempo de preparo 40 minutos, rendimento 6 porções.', 1189, 'http://img.itdg.com.br/tdg/images/recipes/000/135/088/62491/62491_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6155483e-0057-42f2-976c-cbde621c8fc5', 'couscous marroquino (semolina)', 250, 'gramas', '1bab1bd4-86f4-4676-996b-e0ba378050a6');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e3e37852-d090-4c7a-8bc0-a9f4879babc0', 'água fervendo', 2, 'copos americanos', '1bab1bd4-86f4-4676-996b-e0ba378050a6');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f703b472-c8aa-4039-8362-5bce1e96282f', 'manteiga', 1, 'colher de sopa', '1bab1bd4-86f4-4676-996b-e0ba378050a6');
@@ -121,7 +121,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('489f4669-2
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('707297c8-2e64-446f-be5f-3dcbea70f656', 'Está pronto seu couscous marroquino, um acompanhamento delicioso para proteínas diversas!', 6, '1bab1bd4-86f4-4676-996b-e0ba378050a6');
 
 -- Merengue de Morangos
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('b22dbad0-5a97-455e-ae98-e8465eb6a5bc', 'Merengue de Morangos', 'Tempo de preparo 20 minutos, rendimento 8 porções.', 0);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('b22dbad0-5a97-455e-ae98-e8465eb6a5bc', 'Merengue de Morangos', 'Tempo de preparo 20 minutos, rendimento 8 porções.', 0, 'http://img.itdg.com.br/tdg/images/recipes/000/002/991/66433/66433_original.jpg?mode=crop&width=370&height=278');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('01c51919-1be4-43a7-b9c0-2abfb4e9c6f5', 'creme de leite para chantilly', 750, 'gramas', 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('75f2f7bd-eac4-47e6-984a-bca3ff4a37aa', 'suspiros', 300, 'gramas', 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('1b82af04-0b2b-4479-b123-dd7a0721e3eb', 'morangos', 500, 'gramas', 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');

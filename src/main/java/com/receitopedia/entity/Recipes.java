@@ -24,6 +24,7 @@ public class Recipes {
     private String name;
     private String description;
     private Integer viewCount;
+    private String urlImage;
     @Fetch(FetchMode.SELECT)
     @OneToMany(mappedBy = "recipes", targetEntity = Ingredients.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Ingredients> ingredients;
@@ -39,13 +40,14 @@ public class Recipes {
         this.uuid = UUID.randomUUID();
     }
 
-    public Recipes(String description, Integer viewCount, List<Ingredients> ingredients, List<Steps> steps, List<Cookbooks> cookbooks, String name) {
+    public Recipes(String name, String description, Integer viewCount, String urlImage, List<Ingredients> ingredients, List<Steps> steps, List<Cookbooks> cookbooks) {
+        this.name = name;
         this.description = description;
         this.viewCount = viewCount;
+        this.urlImage = urlImage;
         this.ingredients = ingredients;
         this.steps = steps;
         this.cookbooks = cookbooks;
-        this.name = name;
     }
 
     public Integer incrementView() {
@@ -66,6 +68,10 @@ public class Recipes {
 
     public Integer getViewCount() {
         return viewCount;
+    }
+
+    public String getUrlImage() {
+        return urlImage;
     }
 
     public List<Ingredients> getIngredients() {
