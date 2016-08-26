@@ -133,6 +133,23 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('4a9084f8-d
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('cc3029f2-96e5-4fd8-b518-1aa65173c04d', 'Guarde em geladeira até a hora de servir', 5, 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('ba8eaacf-7b02-4e04-9bd5-072714785a25', 'Delicie-se com esta sobremesa simples e deliciosa!', 6, 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
 
+-- Salada de gorgonzola com peras grelhadas e nozes
+INSERT INTO recipes(uuid, name, description, view_count) VALUES ('7f38e045-f6c3-49c4-94dd-33347404aa97', 'Salada de gorgonzola com peras grelhadas e nozes', 'Tempo de preparo 20 minutos, rendimento 04 porções', 1246);
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('11cd061f-11f4-406a-b0a8-d6c8173b6af5', 'Mix de folhas de sua preferência', 0, 'a gosto', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('a4ccf08b-fe88-41f2-a83b-337fe6b08646', 'Pêras não muito maduras (firmes)', 2, 'Unidades', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e763e09e-b0f3-41d8-9859-31b98fb0dd7c', 'Queijo gorgonzola ou roquefort', 350, 'Gramas', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6838c1d6-12d5-4b24-8967-efdd02caa91f', 'Nozes ou outro tipo de castanha crocante', 250, 'Gramas', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('3c183348-d016-408f-a7bd-375265e473ca', 'Mel', 2, 'Colheres de sopa', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('44113359-e6f4-4650-8975-df334155b46d', 'Limão espremido', 1, 'Unidade', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('bfa8fb9f-99df-4b40-ac57-7fa65fa50dac', 'Azeite', 0, 'A gosto', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('6fd3d1c6-7d3e-45b3-aaa8-b236aec023be', 'Sal', 0, 'A gosto', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('1d5eb775-e24e-4470-a3b4-28194e5f1523', 'Vinagre balsâmico reduzido', 0, 'A gosto', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('4a4b7bc3-e247-40ab-9c65-987197c1f568', 'Corte as pêras em fatias de aproximadamente 1cm de espessura e tempere com o mel, limão espremido, azeite e sal.', 1, '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('51a17ea9-97b9-47c7-9b18-5266802c3577', 'Esquente uma frigideira e grelhe as fatias de pêra mexendo pouco e com cuidado para não desmanchar.', 2, '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('7db11cee-af90-49c6-b226-eacd6882cab0', 'Corte o queijo em pedaços médios e disponha sobre as folhas.', 3, '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('aa6ff44a-9b8d-470f-9f7c-8605c8edcfd3', 'Adicione as pêras e finalize com um fio de azeite e outro de vinagre balsâmico.', 4, '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('fb0d405c-2902-43bc-867f-35aeff1df09c', 'Além de deliciosa a salada é muito bonita, sendo perfeita para servir de entrada!', 5, '7f38e045-f6c3-49c4-94dd-33347404aa97');
+
 -- Livros de receitas
 INSERT INTO cookbooks(uuid, name) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'Receitas com carnes');
 INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
