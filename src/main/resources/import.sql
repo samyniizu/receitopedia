@@ -134,7 +134,7 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('cc3029f2-9
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('ba8eaacf-7b02-4e04-9bd5-072714785a25', 'Delicie-se com esta sobremesa simples e deliciosa!', 6, 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
 
 -- Salada de gorgonzola com peras grelhadas e nozes
-INSERT INTO recipes(uuid, name, description, view_count) VALUES ('7f38e045-f6c3-49c4-94dd-33347404aa97', 'Salada de gorgonzola com peras grelhadas e nozes', 'Tempo de preparo 20 minutos, rendimento 04 porções', 1246);
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('7f38e045-f6c3-49c4-94dd-33347404aa97', 'Salada de gorgonzola com peras grelhadas e nozes', 'Tempo de preparo 20 minutos, rendimento 04 porções', 1246, 'https://sm1.imgs.sapo.pt/mb/2/6/0667daeb12b09be151d3e2dff84c931763fc82.jpg');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('11cd061f-11f4-406a-b0a8-d6c8173b6af5', 'Mix de folhas de sua preferência', 0, 'a gosto', '7f38e045-f6c3-49c4-94dd-33347404aa97');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('a4ccf08b-fe88-41f2-a83b-337fe6b08646', 'Pêras não muito maduras (firmes)', 2, 'Unidades', '7f38e045-f6c3-49c4-94dd-33347404aa97');
 INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('e763e09e-b0f3-41d8-9859-31b98fb0dd7c', 'Queijo gorgonzola ou roquefort', 350, 'Gramas', '7f38e045-f6c3-49c4-94dd-33347404aa97');
@@ -150,10 +150,63 @@ INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('7db11cee-a
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('aa6ff44a-9b8d-470f-9f7c-8605c8edcfd3', 'Adicione as pêras e finalize com um fio de azeite e outro de vinagre balsâmico.', 4, '7f38e045-f6c3-49c4-94dd-33347404aa97');
 INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('fb0d405c-2902-43bc-867f-35aeff1df09c', 'Além de deliciosa a salada é muito bonita, sendo perfeita para servir de entrada!', 5, '7f38e045-f6c3-49c4-94dd-33347404aa97');
 
+-- Frango com Quiabo
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('c314f550-96ba-446c-9e95-8269e9981896', 'Frango com Quiabo', 'Tempo de preparo 60 minutos, rendimento 06 porções', 1379, 'http://img.itdg.com.br/tdg/images/recipes/000/095/055/30348/30348_original.jpg?mode=crop&width=370&height=278');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('83f703f3-1537-4651-bdae-7d51a82220c7', 'Quiabo', 1, 'Quilo', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('71550d69-86b9-45f5-8cb2-f7dec39ae092', 'Frango inteiro cortado em pedaços', 1, 'Unidade', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('733861db-397c-4c32-9a28-6af92d6dd177', 'Alho amassado', 5, 'Dentes', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f95c6926-1533-40ac-aa92-89d59d008969', 'Cebola', 1, 'Unidade', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('3aeca759-705a-424a-b774-2bc9938a7e10', 'Óleo', 1, 'Xícara de chá', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('8b2a26af-1769-4bc4-bb00-fbc51c3610fb', 'Colorau', 1, 'Colher de sobremesa', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('c8dbb9d7-e54e-4c19-a01c-4f3d4aa7d86a', 'Caldo de galinha', 1, 'Unidade', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('d2093178-a271-403a-8187-22bf98fe018c', 'Pimenta', 0, 'A gosto', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('547d5df5-6538-4e14-ac04-799339d2002d', 'Sal', 0, 'A gosto', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('4f949ab3-9711-4602-a5f5-62f94a1213e9', 'Cheiro verde', 0, 'A gosto', 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('fb31ff4b-7718-4d9e-adf3-9f3a5b6a468d', 'Tempere o frango com o alho, sal, pimenta e colorau e deixe marinar na geladeira durante 30 minutos.', 1, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('a87196a2-e214-49e4-ae05-1556efd72b5e', 'Lave os quiabos e seque bem. Pique em rodelas e refogue em uma xícara de óleo até que a baba seque. Esse processo demora cerca de 20 minutos, tenha paciência e vá mexendo para que o quiabo não desmanche.', 2, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('331598ff-c7b9-4693-85a6-c24cbdfd2c3e', 'Quando a baba secar, coe os quiabos para retirar o óleo e reserve.', 3, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('123f98cb-4200-437b-95a5-1aa5e7adc32e', 'Aqueça duas colheres de sopa de óleo em uma panela e doure a cebola até que a mesma esteja bem corada.', 4, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('049227e1-9018-4f02-a433-4585038d88a3', 'Junte o frango e frite bem. Quando o frango estiver bem frito na cebola, adicione 3 copos de água fervente e o caldo de galinha.', 5, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('ee3186b5-de8a-4e34-b9c7-f3bae4f60c59', 'Corrija o sal, caso necessário e deixe cozinhar até que o frango esteja macio.', 6, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('eb8b601c-e459-4662-baaa-c74c3ea18f51', 'Junte o quiabo e deixe apurar até que o caldo fique encorpado.', 7, 'c314f550-96ba-446c-9e95-8269e9981896');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('bd162cd2-0883-4d0e-abae-6414e79e64e9', 'Quando o caldo estiver na consistência desejada, acrescente o cheiro verde e está pronto para servir!', 8, 'c314f550-96ba-446c-9e95-8269e9981896');
+
+-- Salada de Berinjela no Forno
+INSERT INTO recipes(uuid, name, description, view_count, url_image) VALUES ('9773684a-27d9-43d2-ac1a-a73a15026337', 'Salada de Berinjela no Forno', 'Tempo de preparo 45 minutos, rendimento 10 porções', 732, 'http://img.itdg.com.br/tdg/images/recipes/000/007/794/11355/11355_original.jpg?mode=crop&width=370&height=278');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('7e68937a-5b12-4b5c-aec8-eaebef2eab91', 'Berinjela', 3, 'Unidades', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('eaf337cc-2754-4e5b-b34f-288cc6e14365', 'Pimentão verde', 1, 'Unidade', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('ee28bee4-416f-472f-b029-c1d62ad55deb', 'Pimentão vermelho', 1, 'Unidade', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('fc89c877-bfaa-4363-8c7e-3f4f3d6aca8e', 'Pimentão amarelo', 1, 'Unidade', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('93252451-431c-4a6b-8eeb-fd99eabc374d', 'Azeite', 1/2, 'Xícara de chá', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('c3970159-2c85-4a2f-b1d6-23f3765e30c9', 'Cebola', 1, 'Unidade', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('0e12d2ed-36df-4be6-b6fa-bea7bb8f0d48', 'Vinagre', 1/2, 'Xícara de chá', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('50bfcbf3-ef80-42f2-9548-ccbe2783dac5', 'Azeitonas pretas picadas', 3, 'Colheres de sopa', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('2ccc2409-e52b-4dc0-9344-0451ecc9a942', 'Alho picado', 2, 'Dentes', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('f40c5f91-cb71-4195-8b43-4b0d60acc444', 'Louro', 1, 'Folha', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('ae7f0318-9a80-4daa-b57c-62a7843e9635', 'Orégano', 2, 'Colheres de sopa', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('09e0b34b-f1fb-454e-aedd-bbb802b7da87', 'Salsa picada', 2, 'Colheres de sopa', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO ingredients(uuid, name, quantity, unit, recipes_uuid) VALUES ('a02b1e82-e03e-407d-96a5-9fd4e3f0d2aa', 'Sal', 0, 'A gosto', '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('3a7a829d-4409-4260-bf27-bf5578102407', 'Lave as berinjelas e corte em fatias finas no sentido do comprimento e depois em tiras finas.', 1, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('ceb9c6cb-3ed7-4a23-9ab7-b0c26414e15e', 'Coloque as berinjelas de molho em água com sal durante meia hora.', 2, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('2d3ff172-cd7d-415e-8ad4-934c6bc077ef', 'Lave as berinjelas e seque espremendo levemente para que não fique muita água.', 3, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('b5b9046d-da3e-44e9-9148-9d4318f9bd02', 'Corte a cebola e o pimentão em tirinhas, coloque em uma assadeira, junte a berinjela, o alho, o louro, a salsa, orégano, azeitona e o sal.', 4, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('11010bcb-7637-4283-be69-2439b790d355', 'Regue com metade do vinagre e leve ao forno médio preaquecido por 45 minutos.', 5, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('620aa6b7-11db-4f68-a6e3-53141ad13b09', 'Retire do forno e regue com o azeite e o restante do vinagre.', 6, '9773684a-27d9-43d2-ac1a-a73a15026337');
+INSERT INTO steps(uuid, description, priority, recipes_uuid) VALUES ('8fb3378c-3417-4eaa-b193-8c6d924f453e', 'Deixe esfriar e sirva. Fica delicioso para acompanhar um pãozinho caseiro ou aquela salada de folhas!', 7, '9773684a-27d9-43d2-ac1a-a73a15026337');
 -- Livros de receitas
-INSERT INTO cookbooks(uuid, name) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'Receitas com carnes');
+INSERT INTO cookbooks(uuid, name) VALUES ('3c15fe16-889a-4152-95eb-e6a4a983e2ee', 'Acompanhamentos');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('3c15fe16-889a-4152-95eb-e6a4a983e2ee', '1bab1bd4-86f4-4676-996b-e0ba378050a6');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('3c15fe16-889a-4152-95eb-e6a4a983e2ee', '0e5af3c0-ec72-4da1-a844-7cc21338e053');
+
+INSERT INTO cookbooks(uuid, name) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'Receitas com carnes, peixes e aves');
 INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'aa769aa8-a7c9-45ff-b906-d54ba5d8df4c');
 INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', '15a68d8b-57a9-461a-8368-6fd985468578');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('28d85b31-195b-4813-9300-fdd5e8edde4a', 'c314f550-96ba-446c-9e95-8269e9981896');
+
+INSERT INTO cookbooks(uuid, name) VALUES ('5390557f-2420-44d6-b60e-09e2d4e17103', 'Saladas');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('5390557f-2420-44d6-b60e-09e2d4e17103', '7f38e045-f6c3-49c4-94dd-33347404aa97');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('5390557f-2420-44d6-b60e-09e2d4e17103', '9773684a-27d9-43d2-ac1a-a73a15026337');
 
 INSERT INTO cookbooks(uuid, name) VALUES ('48f12f82-17e6-4661-a3f6-427cf8f88301', 'Sobremesas');
 INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('48f12f82-17e6-4661-a3f6-427cf8f88301', '1f886899-f47d-4a7b-a685-6e930b915fd2');
+INSERT INTO cookbooks_recipes(cookbooks_uuid, recipes_uuid) VALUES ('48f12f82-17e6-4661-a3f6-427cf8f88301', 'b22dbad0-5a97-455e-ae98-e8465eb6a5bc');
